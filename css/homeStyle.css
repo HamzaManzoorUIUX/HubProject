@@ -1,0 +1,20 @@
+#fullSSlider{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+#topNav{
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+}
+#sidenavTrigger{
+  z-index: 11;
+  position: fixed;
+  right: 10px;
+  top: 5px;
+}
+
+#slide-out .collection>.collection-item>a{
+padding: 0px;
+}

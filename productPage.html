@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar-fixed transparent nav">
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">
+                <img src="images/logo.png" alt="Logo" height="70" class="brand-logo">
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li id="inputHolder" class="scale-transition scale-out"><input type="text" class="" placeholder="Enter here"
+                        id="searchInput"></li>
+                <li id="searchBtnHolder" class="red"><a href="#" id="searchBtn"><i class="material-icons left">search</i>Search</a></li>
+                <li class="red">
+                    <a href="#" data-target='dropdown1' class="dropdown-trigger">
+                        <span>
+                            <i class="material-icons right">arrow_drop_down</i>SignIn &amp; Join
+                        </span>
+                    </a>
+                    <ul id='dropdown1' class='dropdown-content'>
+                        <li><a href="#!">LogIn</a></li>
+                        <li><a href="#!">SignUp</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="col s12 m12">
+            <nav class="blue">
+                <div class="nav-wrapper">
+                    <div class="col s12">
+                        <a href="#!" class="breadcrumb">First</a>
+                        <a href="#!" class="breadcrumb">Second</a>
+                        <a href="#!" class="breadcrumb">Third</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="cardPanel ">
+                        <img src="images/1.jpg" alt="" height="100%">
+                    </div>
+
+                    <ul id="imgOfItem">
+
+                        <li>
+                            <img src="images/1.jpg" height="100%" alt="">
+                        </li>
+                        <li>
+                            <img src="images/2.jpg" height="100%" alt="">
+                        </li>
+                        <li>
+                            <img src="images/3.jpg" height="100%" alt="">
+                        </li>
+                        <li>
+                            <img src="images/4.jpg" height="100%" alt="">
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col s12 m4">
+                    <h4>
+                        Name of product
+                    </h4>
+                    <p>
+                        Brand:
+                        <a href="#">Link1</a> |
+                        <a href="#">Link2</a> |
+                        <a href="#">Link3</a>
+
+                    </p>
+                    <hr>
+                    <h4 id="PriceOfItem" class="red-text">
+                        Rs.123
+                    </h4>
+                    <div class="row">
+                            <label class="col m2 s12" for="Qty">
+                                    Quantity
+                                </label>
+                        <div class="col s2">
+                            <a href="javascript:void(0)" class="btn-floating btn-large waves-effect waves-light red" onclick="removeOne()">
+                                <i class="material-icons">
+                                    remove
+                                </i>
+                            </a>
+                        </div>
+                        <div class="col s6">
+                            <input type="number" readonly id="Qty" class="center" value="0">
+                        </div>
+                        <div class="col s2">
+                            <a href="javascript:void(0)" class="btn-floating btn-large waves-effect waves-light red" onclick="addOne()">
+                                <i class="material-icons">
+                                    add
+                                </i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col s12 m4"></div>
+            </div>
+            <hr style="margin:2rem">
+            <section class="center">
+                <div class="row" id="mainSearchData">
+                    <script>
+                        for (var i = 0; i < 15; i++) {
+                            mainSearchData.innerHTML +=
+                                `<div class="col s12 m3">
+                                <div class="card">
+                                        <img src="images/${i + 1}.jpg" alt="${i + 1}" width="100%">
+                                        <div class="card-content">
+                                            <h5>Product ${i + 1}</h5>
+                                            <p>This is ${i + 1} Product
+                                        </div>
+                                    </div>
+                        </div>
+                                `;
+                        }
+                    </script>
+                </div>
+            </section>
+        </div>
+    </div>
+    <ul class="pagination center" id="pagination">
+        <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+        <li class="active"><a href="#!">1</a></li>
+        <li class="waves-effect"><a href="#!">2</a></li>
+        <li class="waves-effect"><a href="#!">3</a></li>
+        <li class="waves-effect"><a href="#!">4</a></li>
+        <li class="waves-effect"><a href="#!">5</a></li>
+        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+    </ul>
+    </div>
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red hide-on-med-and-up">
+            <i class="large material-icons">mode_edit</i>
+        </a>
+        <ul class="hide-on-med-and-up">
+            <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+            <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+            <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+            <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+        </ul>
+    </div>
+    <footer class="page-footer grey darken-4">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer
+                        content.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright blue">
+            <div class="container">
+                © 2018 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/materialize.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

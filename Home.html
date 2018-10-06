@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/homeStyle.css">
+    <script src="js/wow.min.js"></script>
+</head>
+
+<body onscroll="scrollChange()">
+    <div class="sideNavBar">
+            <a href="#" class="sidenav-trigger" id="sidenavTrigger" data-target="slide-out">
+                    <i class="material-icons right medium">view_module</i></a>            
+            <div class="sidenav" id="slide-out">
+                    <ul  class="collection">
+                    <li class="collection-item">
+                        <a href="https://www.daraz.pk/phones-tablets/" class="black-text collection-link">
+                            <i class="fas fa-mobile-alt mr-2"></i>
+                            Mobiles &amp; Tablets
+                        </a>
+                    </li>
+                    <li class="collection-item">
+                        <a href="https://www.daraz.pk/tvs-audio-cameras/" class="black-text collection-link">
+                            <i class="fas fa-camera mr-2"></i>
+                            Camera &amp; Accessories
+                        </a>
+                    </li>
+                    <li class="collection-item">
+                        <a href="https://www.daraz.pk/tvs-audio-cameras/" class="black-text collection-link">
+                            <i class="fas fa-tv mr-2"></i>
+                            Tv &amp; video
+                        </a>
+                    </li>
+                    <li class="collection-item">
+                        <a href="https://www.daraz.pk/computing-gaming/" class="black-text collection-link">
+                            <i class="fas fa-laptop mr-2"></i>
+                            Computer &amp; Laptop
+                        </a>
+                    </li>
+                    <li class="collection-item">
+                        <a href="https://www.daraz.pk/home-appliances/" class="black-text collection-link">
+                            <i class="fas fa-blender mr-2"></i>
+                            Home Appliances
+                        </a>
+                    </li>
+                    <li class="collection-item"><a href="#" class="black-text collection-link">
+                            <i class="fas fa-volume-up mr-2"></i>
+                            Musical Instruments
+                        </a>
+                    </li>
+                    <li class="collection-item">
+                        <a href="#" class="black-text collection-link">
+                            <i class="fas fa-cogs mr-2"></i>
+                            HSN Services
+                        </a>
+                    </li>
+                    <li class="collection-item">
+                        <a href="#" class="black-text collection-link">
+                            <i class="fas fa-gamepad mr-2"></i>
+                            Gaming &amp; Toys
+                        </a>
+                    </li>
+                    <li class="collection-item">
+                        <a href="#" class="black-text collection-link">
+                            <i class="fas fa-sign-in-alt mr-2"></i>
+                            More
+                        </a>
+                    </li>
+                </ul>
+                <ul class="collection">
+                    <li class="collection-item">
+                        <h6>Price Range</h6>
+                    </li>
+                    <li class="collection-item">
+                        <label for="maxRange" class="d-flex">
+                            <i>0</i>
+                            <input type="range" id="minRange" min="0" max="10000" />
+                            <i>10000</i>
+                        </label>
+                        <br>
+                        <label for="maxRange" class="d-flex">
+                            <i>0</i>
+                            <input type="range" id="maxRange" min="0" max="10000" />
+                            <i>10000</i>
+                        </label>
+                    </li>
+                    <li class="collection-item">
+                        Product Categories
+                    </li>
+                    <li class="collection-item">
+                        <label>
+                            <input type="checkbox" id="mobileTablets" />
+                            <span><i class="fas fa-mobile-alt "></i>Mobiles &amp; Tablets</span>
+                        </label>
+                    </li>
+                    <li class="collection-item">
+                        <label>
+                            <input type="checkbox" id="mobileTablets" />
+                            <span><i class="fas fa-camera "></i>Camera &amp; Accessories</span>
+                        </label>
+                    </li>
+    
+                    <li class="collection-item">
+                        <label>
+                            <input type="checkbox" id="mobileTablets" />
+                            <span>
+                                <i class="fas fa-tv "></i>Tv &amp; video
+                            </span>
+                        </label>
+                    </li>
+                    <li class="collection-item">
+                        <label>
+                            <input type="checkbox" id="mobileTablets" />
+                            <span>
+                                <i class="fas fa-laptop "></i>Computer &amp; Laptop
+                            </span>
+                        </label>
+                    </li>
+                    <li class="collection-item">
+                        <label>
+                            <input type="checkbox" id="mobileTablets" />
+                            <span>
+                                <i class="fas fa-blender "></i>Home Appliances
+                            </span>
+                        </label>
+                    </li>
+                    <li class="collection-item">
+                        <label>
+                            <input type="checkbox" id="mobileTablets" />
+                            <span>
+                                <i class="fas fa-volume-up "></i>Musical Instruments
+                            </span>
+                        </label>
+                    </li>
+                    <li class="collection-item">
+                        <label>
+                            <input type="checkbox" id="mobileTablets" />
+                            <span>
+                                <i class="fas fa-cogs "></i>HSN Services
+                            </span>
+                        </label>
+                    </li>
+                    <li class="collection-item">
+                        <label>
+                            <input type="checkbox" id="mobileTablets" />
+                            <span>
+                                <i class="fas fa-gamepad "></i>Gaming &amp; Toys
+                            </span>
+                        </label>
+                    </li>
+                    <li class="collection-item">
+                        <label>
+                            <input type="checkbox" id="mobileTablets" />
+                            <span>
+                                <i class="fas fa-sign-in-alt "></i>More
+                            </span>
+                        </label>
+                    </li>
+                    <li class="collection-item">
+                        <h6>
+                            Product Tages
+                        </h6>
+                    </li>
+                    <li class="collection-item">
+                        <label>
+                            <input type="checkbox" id="mobileTablets" />
+                            <span><i class="fas fa-mobile-alt "></i>2G</span>
+                        </label>
+                    </li>
+                    <li class="collection-item">
+                        <label>
+                            <input type="checkbox" id="mobileTablets" />
+                            <span><i class="fas fa-mobile-alt "></i>3G</span>
+                        </label>
+                    </li>
+                    <li class="collection-item">
+                        <label>
+                            <input type="checkbox" id="mobileTablets" />
+                            <span><i class="fas fa-mobile-alt "></i>4G</span>
+                        </label>
+                    </li>
+                    <li class="collection-item">
+                        <h6>
+                            Product Brands
+                        </h6>
+                    </li>
+                    <li class="collection-item">
+                        <label>
+                            <input type="checkbox" id="mobileTablets" />
+                            <span><i class="fas fa-mobile-alt "></i>2G</span>
+                        </label>
+                    </li>
+                    <li class="collection-item">
+                        <label>
+                            <input type="checkbox" id="mobileTablets" />
+                            <span><i class="fas fa-mobile-alt "></i>3G</span>
+                        </label>
+                    </li>
+                    <li class="collection-item">
+                        <label>
+                            <input type="checkbox" id="mobileTablets" />
+                            <span><i class="fas fa-mobile-alt "></i>4G</span>
+                        </label>
+                    </li>
+                    <li class="collection-item center">
+                        <button class="btn btn-large red">
+    
+                            <i class="material-icons left">search</i>Search
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+          var elems = document.querySelectorAll('.sidenav');
+          var instances = M.Sidenav.init(elems);
+        });
+        </script>
+    </div>
+    <!-- navigation bar -->
+    <nav id="topNav" class="transparent z-depth-0">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">Logo</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="sass.html">Sass</a></li>
+                    <li><a href="badges.html">Components</a></li>
+                    <li><a href="collapsible.html">JavaScript</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Start Slider -->
+    <!-- ================================== -->
+    <div id="fullSSlider">
+        <div class="slider fullscreen">
+            <ul class="slides">
+                <li>
+                    <img src="images/043.jpg"> <!-- random image -->
+                    <div class="caption center-align">
+                        <h3>This is our big Tagline!</h3>
+                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/044.jpg"> <!-- random image -->
+                    <div class="caption left-align">
+                        <h3>Left Aligned Caption</h3>
+                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/045.jpg"> <!-- random image -->
+                    <div class="caption right-align">
+                        <h3>Right Aligned Caption</h3>
+                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/046.jpg"> <!-- random image -->
+                    <div class="caption center-align">
+                        <h3>This is our big Tagline!</h3>
+                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var elems = document.querySelectorAll('.slider');
+                var instances = M.Slider.init(elems);
+            });
+        </script>
+    </div>
+
+    <!-- ================================== -->
+    <!-- End Slider -->
+    <div id="mainP">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m4 wow flipInY delay-0-25s">
+                    <div class="card">
+                        <img src="images/1.jpg" alt="" width="100%">
+                        <div class="card-content">
+                            <h5>Product</h5>
+                            <p>This isProduct</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4 wow flipInY delay-0-5s">
+                    <div class="card">
+                        <img src="images/2.jpg" alt="" width="100%">
+                        <div class="card-content">
+                            <h5>Product</h5>
+                            <p>This isProduct</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4 wow flipInY delay-0-75s">
+                    <div class="card">
+                        <img src="images/3.jpg" alt="" width="100%">
+                        <div class="card-content">
+                            <h5>Product</h5>
+                            <p>This isProduct</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m4 wow flipInY delay-0-25s">
+                    <div class="card">
+                        <img src="images/4.jpg" alt="" width="100%">
+                        <div class="card-content">
+                            <h5>Product</h5>
+                            <p>This isProduct</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4 wow flipInY delay-0-5s">
+                    <div class="card">
+                        <img src="images/5.jpg" alt="" width="100%">
+                        <div class="card-content">
+                            <h5>Product</h5>
+                            <p>This isProduct</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4 wow flipInY delay-0-75s">
+                    <div class="card">
+                        <img src="images/6.jpg" alt="" width="100%">
+                        <div class="card-content">
+                            <h5>Product</h5>
+                            <p>This isProduct</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m4 wow flipInY delay-0-25s">
+                    <div class="card">
+                        <img src="images/7.jpg" alt="" width="100%">
+                        <div class="card-content">
+                            <h5>Product</h5>
+                            <p>This isProduct</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4 wow flipInY delay-0-5s">
+                    <div class="card">
+                        <img src="images/8.jpg" alt="" width="100%">
+                        <div class="card-content">
+                            <h5>Product</h5>
+                            <p>This isProduct</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4 wow flipInY delay-0-75s">
+                    <div class="card">
+                        <img src="images/9.jpg" alt="" width="100%">
+                        <div class="card-content">
+                            <h5>Product</h5>
+                            <p>This isProduct</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end main product -->
+    <!-- parrlex -->
+    <div class="parallax-container">
+        <div class="parallax"><img src="images/domenico-loia-310197-unsplash.jpg" width="100%"></div>
+      </div>
+      <!-- about us -->
+    <div>
+        <div class="container white-text">
+            <h1 class="center">
+                About us
+            </h1>
+            <div class="row">
+                <div class="col s12 m6">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque at sapiente possimus placeat quis.
+                    Hic magnam reprehenderit est molestias in omnis quo doloribus? Quidem ab officia asperiores
+                    excepturi obcaecati earum.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, impedit magni eligendi dolores
+                    repudiandae suscipit quas nam, officiis perferendis quibusdam dignissimos cumque natus! Debitis
+                    omnis iure delectus rerum animi sapiente.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores consectetur iste corrupti minus
+                    eligendi dolorum aspernatur sapiente cupiditate provident culpa distinctio facilis, architecto ea
+                    error, fugiat, nihil tenetur. Itaque, eligendi!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit expedita, harum fuga exercitationem
+                    nobis cupiditate doloremque veniam ad quibusdam quis labore maxime. Rerum voluptates praesentium
+                    corrupti, laborum laboriosam perspiciatis nihil.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, ex corrupti saepe quidem ipsum
+                    dolores, iste sapiente quia suscipit voluptas odit. Odit at dolores numquam delectus recusandae
+                    dolor sequi iste!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio delectus aliquam quibusdam, tenetur
+                    officiis aliquid ab adipisci recusandae incidunt in vel quas sint, impedit nisi minus, commodi
+                    voluptatibus quaerat harum!
+                </div>
+                <div class="col s12 m6">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque at sapiente possimus placeat quis.
+                    Hic magnam reprehenderit est molestias in omnis quo doloribus? Quidem ab officia asperiores
+                    excepturi obcaecati earum.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, impedit magni eligendi dolores
+                    repudiandae suscipit quas nam, officiis perferendis quibusdam dignissimos cumque natus! Debitis
+                    omnis iure delectus rerum animi sapiente.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores consectetur iste corrupti minus
+                    eligendi dolorum aspernatur sapiente cupiditate provident culpa distinctio facilis, architecto ea
+                    error, fugiat, nihil tenetur. Itaque, eligendi!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit expedita, harum fuga exercitationem
+                    nobis cupiditate doloremque veniam ad quibusdam quis labore maxime. Rerum voluptates praesentium
+                    corrupti, laborum laboriosam perspiciatis nihil.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, ex corrupti saepe quidem ipsum
+                    dolores, iste sapiente quia suscipit voluptas odit. Odit at dolores numquam delectus recusandae
+                    dolor sequi iste!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio delectus aliquam quibusdam, tenetur
+                    officiis aliquid ab adipisci recusandae incidunt in vel quas sint, impedit nisi minus, commodi
+                    voluptatibus quaerat harum!
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/materialize.min.js"></script>
+    <script>
+        // wow.js
+    wow = new WOW(
+        {
+          animateClass: 'animated',
+          offset: 100,
+          callback: function (box) {
+            console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+          }
+        }
+      );
+      wow.init();
+    // Wow.js end
+        </script>
+        <script src="js/Home.js"></script>
+</body>
+
+</html>

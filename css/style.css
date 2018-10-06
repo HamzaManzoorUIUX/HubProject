@@ -1,0 +1,81 @@
+   
+   #searchInput{
+        position: absolute;
+        width: 30vw;
+        right: 0px;
+        height: 100%;
+        border:1px solid rgba(202, 201, 201,0.5);
+        box-sizing: border-box;
+        padding-left: 5px;
+        
+    }
+    #searchBtnHolder{
+        position: relative;
+    }
+    #inputHolder{
+        position: relative;
+        width: 30px;
+        height: 64px;
+    }
+    
+.collection-link{
+    padding: 0px !important;
+}
+.collection-link>i{
+    color: black;
+}
+@media(min-width:687px)
+{
+    #slide-out{
+        transform: translateX(0px) !important;
+        position: static;
+    }
+}
+  .collection-item:hover{
+      background-color: rgba(241, 4, 4, 0.425);
+  }
+  .collection-item span{
+      color: black;
+  }
+  .nav{
+        height: 70px;
+        box-shadow: none;
+  }
+  #sidenavTrigger{
+      position: fixed;
+      right: 10px;
+      top: 10px;
+      z-index: 997;
+  }
+  #slide-out{
+      z-index: 999 !important;
+  }
+  .fixed-action-btn{
+      left: 10px;
+  }
+  .cardPanel{
+      height: 300px;
+      width: 200px;
+  }
+  #imgOfItem{
+      width: 100%;
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      border:1px solid rgba(202, 201, 201,0.5);      
+    justify-content: center; 
+  }
+  #imgOfItem>li>img{
+      height: 100px;
+      margin: 5px;
+  }
+  #imgOfItem>li>img:hover{
+    border:1px solid rgba(202, 201, 201,0.5);      
+      
+  }
+  @media(max-width:756px)
+  {
+    #imgOfItem{
+        flex-direction: column;
+    }
+  }

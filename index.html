@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar-fixed transparent nav">
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">
+                <img src="images/logo.png" alt="Logo" height="70" class="brand-logo">
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li id="inputHolder" class="scale-transition scale-out"><input type="text" class="" placeholder="Enter here"
+                        id="searchInput"></li>
+                <li id="searchBtnHolder" class="red"><a href="#" id="searchBtn"><i class="material-icons left">search</i>Search</a></li>
+                <li class="red">
+                    <a href="#" data-target='dropdown1' class="dropdown-trigger">
+                        <span>
+                            <i class="material-icons right">arrow_drop_down</i>SignIn &amp; Join
+                        </span>
+                    </a>
+                    <ul id='dropdown1' class='dropdown-content'>
+                        <li><a href="#!">LogIn</a></li>
+                        <li><a href="#!">SignUp</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <a href="#" class="btn btn-floating hide-on-med-and-up blue sidenav-trigger btn-large" id="sidenavTrigger" data-target="slide-out">
+        <i class="material-icons right">view_module</i></a>
+    <div class="row">
+        <div class="col s10 m3 sidenav" id="slide-out">
+                <ul  class="collection">
+                <li class="collection-item">
+                    <a href="https://www.daraz.pk/phones-tablets/" class="black-text collection-link">
+                        <i class="fas fa-mobile-alt mr-2"></i>
+                        Mobiles &amp; Tablets
+                    </a>
+                </li>
+                <li class="collection-item">
+                    <a href="https://www.daraz.pk/tvs-audio-cameras/" class="black-text collection-link">
+                        <i class="fas fa-camera mr-2"></i>
+                        Camera &amp; Accessories
+                    </a>
+                </li>
+                <li class="collection-item">
+                    <a href="https://www.daraz.pk/tvs-audio-cameras/" class="black-text collection-link">
+                        <i class="fas fa-tv mr-2"></i>
+                        Tv &amp; video
+                    </a>
+                </li>
+                <li class="collection-item">
+                    <a href="https://www.daraz.pk/computing-gaming/" class="black-text collection-link">
+                        <i class="fas fa-laptop mr-2"></i>
+                        Computer &amp; Laptop
+                    </a>
+                </li>
+                <li class="collection-item">
+                    <a href="https://www.daraz.pk/home-appliances/" class="black-text collection-link">
+                        <i class="fas fa-blender mr-2"></i>
+                        Home Appliances
+                    </a>
+                </li>
+                <li class="collection-item"><a href="#" class="black-text collection-link">
+                        <i class="fas fa-volume-up mr-2"></i>
+                        Musical Instruments
+                    </a>
+                </li>
+                <li class="collection-item">
+                    <a href="#" class="black-text collection-link">
+                        <i class="fas fa-cogs mr-2"></i>
+                        HSN Services
+                    </a>
+                </li>
+                <li class="collection-item">
+                    <a href="#" class="black-text collection-link">
+                        <i class="fas fa-gamepad mr-2"></i>
+                        Gaming &amp; Toys
+                    </a>
+                </li>
+                <li class="collection-item">
+                    <a href="#" class="black-text collection-link">
+                        <i class="fas fa-sign-in-alt mr-2"></i>
+                        More
+                    </a>
+                </li>
+            </ul>
+            <ul class="collection">
+                <li class="collection-item">
+                    <h6>Price Range</h6>
+                </li>
+                <li class="collection-item">
+                    <label for="maxRange" class="d-flex">
+                        <i>0</i>
+                        <input type="range" id="minRange" min="0" max="10000" />
+                        <i>10000</i>
+                    </label>
+                    <br>
+                    <label for="maxRange" class="d-flex">
+                        <i>0</i>
+                        <input type="range" id="maxRange" min="0" max="10000" />
+                        <i>10000</i>
+                    </label>
+                </li>
+                <li class="collection-item">
+                    Product Categories
+                </li>
+                <li class="collection-item">
+                    <label>
+                        <input type="checkbox" id="mobileTablets" />
+                        <span><i class="fas fa-mobile-alt "></i>Mobiles &amp; Tablets</span>
+                    </label>
+                </li>
+                <li class="collection-item">
+                    <label>
+                        <input type="checkbox" id="mobileTablets" />
+                        <span><i class="fas fa-camera "></i>Camera &amp; Accessories</span>
+                    </label>
+                </li>
+
+                <li class="collection-item">
+                    <label>
+                        <input type="checkbox" id="mobileTablets" />
+                        <span>
+                            <i class="fas fa-tv "></i>Tv &amp; video
+                        </span>
+                    </label>
+                </li>
+                <li class="collection-item">
+                    <label>
+                        <input type="checkbox" id="mobileTablets" />
+                        <span>
+                            <i class="fas fa-laptop "></i>Computer &amp; Laptop
+                        </span>
+                    </label>
+                </li>
+                <li class="collection-item">
+                    <label>
+                        <input type="checkbox" id="mobileTablets" />
+                        <span>
+                            <i class="fas fa-blender "></i>Home Appliances
+                        </span>
+                    </label>
+                </li>
+                <li class="collection-item">
+                    <label>
+                        <input type="checkbox" id="mobileTablets" />
+                        <span>
+                            <i class="fas fa-volume-up "></i>Musical Instruments
+                        </span>
+                    </label>
+                </li>
+                <li class="collection-item">
+                    <label>
+                        <input type="checkbox" id="mobileTablets" />
+                        <span>
+                            <i class="fas fa-cogs "></i>HSN Services
+                        </span>
+                    </label>
+                </li>
+                <li class="collection-item">
+                    <label>
+                        <input type="checkbox" id="mobileTablets" />
+                        <span>
+                            <i class="fas fa-gamepad "></i>Gaming &amp; Toys
+                        </span>
+                    </label>
+                </li>
+                <li class="collection-item">
+                    <label>
+                        <input type="checkbox" id="mobileTablets" />
+                        <span>
+                            <i class="fas fa-sign-in-alt "></i>More
+                        </span>
+                    </label>
+                </li>
+                <li class="collection-item">
+                    <h6>
+                        Product Tages
+                    </h6>
+                </li>
+                <li class="collection-item">
+                    <label>
+                        <input type="checkbox" id="mobileTablets" />
+                        <span><i class="fas fa-mobile-alt "></i>2G</span>
+                    </label>
+                </li>
+                <li class="collection-item">
+                    <label>
+                        <input type="checkbox" id="mobileTablets" />
+                        <span><i class="fas fa-mobile-alt "></i>3G</span>
+                    </label>
+                </li>
+                <li class="collection-item">
+                    <label>
+                        <input type="checkbox" id="mobileTablets" />
+                        <span><i class="fas fa-mobile-alt "></i>4G</span>
+                    </label>
+                </li>
+                <li class="collection-item">
+                    <h6>
+                        Product Brands
+                    </h6>
+                </li>
+                <li class="collection-item">
+                    <label>
+                        <input type="checkbox" id="mobileTablets" />
+                        <span><i class="fas fa-mobile-alt "></i>2G</span>
+                    </label>
+                </li>
+                <li class="collection-item">
+                    <label>
+                        <input type="checkbox" id="mobileTablets" />
+                        <span><i class="fas fa-mobile-alt "></i>3G</span>
+                    </label>
+                </li>
+                <li class="collection-item">
+                    <label>
+                        <input type="checkbox" id="mobileTablets" />
+                        <span><i class="fas fa-mobile-alt "></i>4G</span>
+                    </label>
+                </li>
+                <li class="collection-item center">
+                    <button class="btn btn-large red">
+
+                        <i class="material-icons left">search</i>Search
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <script>
+                document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems);
+    });
+    </script>
+        <div class="col s12 m9">
+            <!-- slider Html -->
+            <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="images/043.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="images/044.jpg"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Left Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="images/045.jpg"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Right Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="images/046.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+            <!-- slider html end -->
+            <hr style="margin:2rem">
+            <section class="center">
+                <h1>Quick Sale</h1>
+                <div class="row" id="mainSearchData">
+                    <script>
+                        for (var i = 0; i < 15; i++) {
+                            mainSearchData.innerHTML +=
+                                `<div class="col s12 m3">
+                                <div class="card">
+                                        <img src="images/${i+1}.jpg" alt="${i+1}" width="100%">
+                                        <div class="card-content">
+                                            <h5>Product ${i+1}</h5>
+                                            <p>This is ${i+1} Product
+                                        </div>
+                                    </div>
+                        </div>
+                                `;
+                        }
+                    </script>
+                </div>
+            </section>
+        </div>
+        <ul class="pagination center" id="pagination">
+            <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+            <li class="active"><a href="#!">1</a></li>
+            <li class="waves-effect"><a href="#!">2</a></li>
+            <li class="waves-effect"><a href="#!">3</a></li>
+            <li class="waves-effect"><a href="#!">4</a></li>
+            <li class="waves-effect"><a href="#!">5</a></li>
+            <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+        </ul>
+    </div>
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red hide-on-med-and-up">
+            <i class="large material-icons">mode_edit</i>
+        </a>
+        <ul class="hide-on-med-and-up">
+            <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+            <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+            <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+            <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+        </ul>
+    </div>
+    <footer class="page-footer grey darken-4">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer
+                        content.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright blue">
+            <div class="container">
+                © 2018 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/materialize.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
