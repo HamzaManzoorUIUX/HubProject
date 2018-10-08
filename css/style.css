@@ -53,6 +53,11 @@
   .fixed-action-btn{
       left: 10px;
   }
+  .fixed-action-btn>ul{
+      width: 56px;
+      position: fixed;
+      left: 10px;
+  }
   .cardPanel{
       height: 300px;
       width: 200px;
