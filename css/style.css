@@ -79,3 +79,19 @@
         flex-direction: column;
     }
   }
+  #decriptionP{
+      padding: 10px 20px;
+  }
+  #decTable{
+      margin-top:2rem; 
+  }
+  .border td,.border th{
+      border: 1px solid rgb(114, 112, 112);
+  }
+  #subDiv{
+      display: flex;
+  }
+  #subInput{
+      background: white;
+      height: 36px;
+  }

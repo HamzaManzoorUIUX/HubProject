@@ -24,3 +24,10 @@ padding: 0px;
 #mainP{
   margin-top: 5rem;
 }
+#subDiv{
+  display: flex;
+}
+#subInput{
+  background: white;
+  height: 36px;
+}
